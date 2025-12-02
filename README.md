@@ -237,6 +237,16 @@
 
 ## 常见问题
 
+### 为什么安装运行程序后，会显示“白屏”、“无内容”？
+
+如果运行微备份出现“白屏”、“无内容”、“stat /var/apps/WxBackup/target/index.cgi/: no such file or directory”、“502”等情况，请在飞牛终端中，执行以下命令：
+
+```
+systemctl restart trim_http_cgi.service
+```
+
+
+
 ### 为什么无法修改备份路径？
 
 暂时不支持修改备份路径，因飞牛未开放相关的接口，导致无权限修改。如果后续飞牛开放相关接口，微备份会立即新增自定义备份路径功能。
@@ -385,6 +395,7 @@ BAK_10_TEXT
 如有任何使用上的问题、意见反馈，均可联系客服。
 
 **联系客服：** weibeifen@proton.me
+
 
 
 
